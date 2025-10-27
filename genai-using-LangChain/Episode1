@@ -1,1 +1,84 @@
+               //WHAT IS GenAI ?
+Generative AI is a type of artificial intelligence that creates new content-such as text, images,music, or code-by learning patterns from existing data,
+mimicking human creativity.
+AI->ML->DL>GenAI
 
+            //GenAI Impact Areas
+//1.Customer Support : Chatbot.
+//2.Content Creation .
+//3.Education :Chatgpt.
+//4.Software Development.
+
+          //Is GenAI successful?
+//QUESTION 1: Does it solve real world problems?
+Internet solves , Crypto not likely.
+Yes, GenAI solves daily world problems..customer support, chatgpt(personal tutor).
+
+//QUESTION 2: Is it useful on a daily basis?
+yes
+
+//QUESTION 3: Is it impacting the world economics?
+yes ..deepseek 
+
+//QUESTION 4: Is it creating new jobs?
+yes ..AI engineer.
+
+//QUESTION 5: Is it accessible?
+//yes..easily.
+
+
+                                   MENTAL MODEL:
+
+  User Perspective <- Foundation Models(generalised models -eg:LLMs) -> Builder Perspective
+
+Prompt Engineering : User Perspective
+RLHF(Reinforcement Learning with the help of human feedback) : Builder Perspective
+RAG : User Perspective
+Pretraining : Builder Perspective
+Quantization (optimise):  Builder Perspective
+AI Agents :  User Perspective
+Vector Databases: User Perspective
+
+
+                         THE BUILDER'S PERSPECTIVE 
+//1.Transformer Architecture
+//2.Types of Transformers :
+   Encoder Only (BERT)
+   Decoder Only (GPT)
+   Encoder & Decoder based(T5)
+//3.Pretraining :
+   Training Objectives
+   Tokenization Stratgies
+   Training Strategies
+   Handling challenges
+//4.Optimization :
+   Training Optimization
+   Model compression
+   Optimizing Inference
+//5.Fine Tuning
+   Task specific tuning : RLHF
+   Instruction tuning   : PEFT
+   Continual Pretraining
+//6.Evaluation
+//7.Deployment
+
+                        THE USER'S PERSPECTIVE 
+//1.Building Basic LLM Apps
+  Open Source vs Closed Source LLMs
+  Using LLM APIs
+  LangChain
+  HuggingFace
+  Ollama
+//2.Prompt Engineering
+//3.RAG
+//4.Fine Tuning
+//5.Agents
+//6.LLMOps
+//7.Miscellaneous
+
+               DO WE NEED TO LEARN BOTH?
+Builder Side: Data Scientist 
+       AI Engineer
+User Side : Software Developers
+
+               
