@@ -1,0 +1,62 @@
+                 LANGCHAIN COMPONENTS :
+
+1. Models
+2.Prompts
+3.Chains
+4.Memory
+5.Indexes
+6.Agents
+
+                     1.  MODELS:
+In LangChain , "models" are the core interfaces through which you interact with AI models.
+
+NLP ->Chatbot 
+2 problems:
+NLU(Natural Language Understanding)
+reply(Context aware text generation)
+
+Chatbot->LLMS ->internet use->Billions of parameters->huge size(>100GB)
+
+In langchain ..we can communicate with 2 types of AI models:
+1.Language model->LLMS :text(input) ->text(output)
+2.Embedding model->text(input)->vector(output) [semantic search]
+
+                        2.PROMPTS
+Prompts are input provided to a LLM.
+    1.Dynamic and reusable prompts
+    2.Role-based prompts
+    3.Few shot prompting
+
+                         3.CHAINS
+we can build pipelines with the help of chains.
+output of previous stage automatically becomes input of next stage. 
+
+             Complex pipelines:
+1.Parallel chains
+2.Conditional chains
+
+                       4.INDEXES
+Indexes connect your application to external knowledge-such as PDFs, websites or databases.
+1.Doc loader
+2.text splitter
+3.vector store
+4.Retrievers 
+
+                      5.MEMORY
+LLM API calls are stateless. 
+1.Conversation Buffer Memory:
+Stores a transcript of recent messages.Great for short chats but can grow large quickly.
+2.Conversation Buffer Window memory:
+Only keeps the last N interactions to avoid excessive token usage.
+3.Summarizer-Based-Memory : 
+Periodically summarizes older chat segments to keep a condesed memory footprint.
+4.Custom Memory: For advanced use cases, you can stoe specialized state
+(e.g. the user's preferances or key facts about them) in a custom memory class.
+
+
+                 6.AGENTS
+AI agents.
+ -> Reasoning capability
+ -> Tools
+
+ 
