@@ -1,0 +1,75 @@
+              GOAL:
+1.WHY LANGGRAPH EXISTS?
+2.WHAT IS LANGGRAPH?
+3.LANGCHAIN VS LANGGRAPH (When to use what)
+
+
+What is LangChain?
+LangChain is an open-source library designed to simplify the process of building LLM based applications.
+
+It provides modular building blocks that let you create sophisticated LLM-based workflows with ease.
+LangChain consists of multiple components:
+1.Model components gives use a unified interface to interact with various LLM providers.
+2.Prompts component helps you engineer prompts.
+3.Retrievers component helps you fetch relevent documents from a vector store.
+
+But the biggest offering of Langchain is Chains.
+
+What can you do with Langchain?
+1.Simple conversational workflows like chatbots, text summarizers.
+2.Multistep workflows.
+3.RAG applications.
+4.Basic level agents.
+                              AUTOMATED HIRING WORKFLOW
+                                          START
+                                            |
+                                       Hiring Request
+                                            |
+                                        Create JD
+                                            |
+                                        /          
+                                      No
+                                       \  JD Approved
+                                            |
+                                            yes
+                                            |
+                                          Post ID [tools[linkedin API]
+                                            |
+                                      wait 7 days
+                                            |
+                         --------->    Monitor Applications
+                        |                    |
+                        |              enough applications
+                        |               /          \
+                        |            No           Yes
+                        |             |             |
+                          |          modify JD       Shortlist
+                          |           |               |
+                          |         wait 48 hours    Shortlist
+                          ---------- |                 |
+                                                 conduct interview
+                                                       |
+                                                    selected
+                                                     /     \
+                                                   yes     no
+                                                   |         |
+                                    send offer letter        regret email
+                                          |         ^------ 
+                                      accepted              |
+                                      /    \                | 
+                                    yes     no              |
+                                     |       |              |
+                                  onboarding renegotiate ----
+                                     |
+                                    END
+
+CHALLENGES FACED WHILE CREATING THIS WORKFLOW USING LANGCHAIN:
+1.Challenge: Control Flow Complexity.
+               1.Conditional branches
+               2.Loops
+               3.Jumps
+glue code(custom python) will be there and we need to minimise glue code .
+
+2.Handling State.
+    whereas in langgraph the execution is 
+
