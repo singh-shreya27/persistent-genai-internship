@@ -1,0 +1,92 @@
+              CURRICULUM :
+//Foundations of Agentic AI
+//LangGraph Fundamentals
+//Advanced LangGraph
+//AI Agents
+//Agentic RAG
+//Productanization
+
+
+          PREREQUISITES:
+Python(Intermediate)
+Familiarity of LLMs
+LangChain
+
+                 GENERATIVE AI vs AGENTIC AI
+WHAT IS GENERATIVE AI?
+Generative AI refers to a class of artificial intelligence models that can create new content-such as text, images,audio,code, 
+or video-that resembles human- created data.
+
+LLMs based apps like ChatGPT
+Diffusion models for images
+Code generating LLMs like CodeLLama
+TTS(Text to speech) models like ElevenLabs
+Video gen models like Sora
+
+             GENERATIVE AI Vs TRADITIONAL AI
+Traditional AI is about finding patterns in data and giving predictions.
+Generative AI is about learning the distribution of data so that it can generate a new sample from it.  
+The best part of Generative AI is that it can mimic humans.
+
+APPLICATION AREAS:
+Creative and Business writing
+Software Development
+Customer Support
+Education
+Designing
+Generative AI is constantly evolving and improving.
+
+GOAL- To hire a backend engineer!
+Creating a JD.
+Poting the JD to a job platform.
+Shortlisting.
+Interviewing.
+Rolling an offer letter.
+Onboarding.
+
+CHATBOT 1:
+LLM Based Chatbot: 
+PROBLEMS:
+1.Reactive
+2.No memory
+3.Generic Advice
+4.Can't take actions 
+
+CHATBOT 2:
+RAG Based Chatbot :much more useful 
+PROBLEMS:
+1.Reactive
+2.No memory
+3.Specific Advice [Solved].
+4.Can't take actions.
+
+CHATBOT 3:
+TOOL AUGMENTED CHATBOT.
+Linkedin API, Resume Parser Tool, Calender API, Mail API, HRM Access Tool
+PROBLEMS:
+1.Reactive.
+2.No memory.
+3.Specifc Advice[Solved]
+4.Can take actions[Solved]
+5.Can't adapt.
+
+CHATBOT 4:
+AGENTIC AI CHATBOT.
+Pro-active, adaptable, context-aware. 
+
+PROBLEMS:
+1.Pro-active[Solved]
+2.Mmeory[Solved]
+3.Specific advice[Solved]
+4.Can't take actions[Solved]
+5.Can adapt[Solved]
+
+CONCLUSION:
+Generative AI is about creating content, Agentic AI is about solving a goal.
+GenAI is reactive, AgenticAI is proactive.(autonomous)
+GenAI is a building block of Agentic AI.
+
+
+
+
+
