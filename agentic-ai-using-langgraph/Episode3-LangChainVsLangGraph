@@ -71,5 +71,31 @@ CHALLENGES FACED WHILE CREATING THIS WORKFLOW USING LANGCHAIN:
 glue code(custom python) will be there and we need to minimise glue code .
 
 2.Handling State.
-    whereas in langgraph the execution is 
+    whereas in langgraph while creating graph we create a STATE OBJECT which can be done either in pydantic or in Typedictionary.
+which is accessible at each node[read] and it is mutable also[can be edited].
 
+Langchain: stateless
+langgraph:statefull
+
+3.Event Driven Execution.
+Workflow:
+1.Sequential.
+2.Event Driven.
+Langchain is not built for event driven execution.
+Langgraph is event driven.
+
+4.Fault tolerance.
+Important in long-running work flow.
+Faults:
+1.Small fault.
+2.Big fault.
+In langchain, if the system get broken it cannot recover and start again from that point..it will have to start from the beginning.
+whereas, in langgraph..we have retry logic which can take care of small level fault.
+for big fault..we have recovery in langgraph.
+
+5.Human in the loop.
+
+6.Nested workflows.
+   Subgraphs : a graph that is used as a node in another graph.
+we can make multiagent systems.
+we can make any graph reusable.
