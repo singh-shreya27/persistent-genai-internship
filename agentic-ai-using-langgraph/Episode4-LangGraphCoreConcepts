@@ -1,0 +1,93 @@
+                     WHAT IS LANGGRAPH?
+LangGraph is an orchestration framework for building intelligent,stateful, and multi-step LLM workflows.
+
+It enables advanced features like parallelism,loops,branching,memory,and resumability-making it ideal for agentic and production-grade AI applications.
+It models your logic as a graph of nodes(tasks) and edges(routing) instead of a linear chain.
+
+                              LLM WORKFLOWS:
+1.LLM workflows are a step by step process using which we can build complex LLM applications.
+2.Each step in a workflow performs a distinct task-such as prompting, reasoning, tool calling, memory access
+or decision-making.
+3.Workflows can be linear, parallel, branched or looped, allowing for complex behaviours like retries, multi-agent communication, or tool-
+augmented reasoning.
+4.Common workflows.
+
+1. PROMPT CHAINING: Prompt chaining is a technique in which you break a big task into a sequence of smaller prompts,
+   where the output of one prompt becomes the input to the next.
+   Instead of asking a model to do everything in one long, complicated prompt, 
+   you create a chain of prompts — step by step.
+
+2. ROUTING : Routing means choosing which prompt, model, or workflow path to follow based on user input or system conditions.
+Think of routing as a decision-making step.
+
+3. PARALLELIZATION: Parallelization means running multiple tasks at the same time instead of one after the other (sequentially).
+Parallelization = doing multiple operations simultaneously to save time.
+
+4.ORCHESTRATOR WORKERS:
+The orchestrator manages the workflow.
+
+It decides:
+
+Which step to run,
+When to run it,
+Which worker should handle it,
+How to handle errors, retries, loops, etc.
+
+Think of it like a project manager.
+
+5.EVALUATOR OPTIMISER:
+The evaluator reviews the work produced by the model and verifies things like:
+
+Is the answer correct?
+Does it meet constraints?
+Does it follow the format?
+Are there mistakes?
+
+It does not generate the final answer, only evaluates and gives feedback.
+Think of it as quality control.
+
+The optimizer takes the evaluator’s comments and edits/re-generates the response to make it better.
+
+Rewrite.
+Add missing details.
+Correct errors.
+Improve format.
+
+GRAPHS,NODES and EDGES.
+STATE:
+In langGraph, state is the shared memory that flows through your workflow-it holds all the data being passed between nodes as your graph runs.
+1.It is accessible to all the nodes.
+2.It is mutable.
+REDUCERS:
+Reducers in LangGrpah define how updates from nodes are applied to the shared state.
+Each key in the state can have its own reducer, which determines whether new data replaces, merges, or adds to the existing
+value.
+
+         lANGGRPAH EXECUTION MODEL
+1. Graph Definition
+You define:
+
+The state schema
+Nodes (functions that perform tasks)
+Edges (which node connects to which)
+
+2. Compilation
+You call .compile() on the StateGraph.
+This checks the graph structure and prepares it for execution.
+
+3. Invocation
+You run the graph with .invoke(initial_state).
+LangGraph sends the initial state as a message to the entry node.
+
+4. Super-Steps Begin
+Execution proceeds in rounds.
+
+5. Message Passing & Node Activation
+The messages are passed to downstream nodes via edges.
+Nodes that receive messages become active for the next round.
+
+6. Halting Condition
+Execution stops when:
+
+No nodes are active, and
+No messages are in transit .
